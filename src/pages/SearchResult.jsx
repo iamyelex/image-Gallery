@@ -32,7 +32,7 @@ const SearchResult = () => {
         </p>
         {/* <Search /> */}
 
-        <section className="">
+        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 px-4 lg:px-24">
           <ReactSortable
             list={loadImages}
             setList={setLoadImages}

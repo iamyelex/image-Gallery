@@ -30,23 +30,23 @@ const Homepage = () => {
       <main className="mb-24">
         <Search />
 
-        <section className="">
+        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24 w-full">
           <ReactSortable
             list={loadImages}
             setList={setLoadImages}
             disabled={disable}
             // draggable="item"
           >
-            <ul className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24 w-full">
-              {loadImages.slice(0, 15).map((image) => (
-                <ImageCard
-                  key={image.id}
-                  image={image.webformatURL}
-                  id={image.id}
-                  title={image.tags}
-                />
-              ))}
-            </ul>
+            {/* <ul className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24 w-full"> */}
+            {loadImages.slice(0, 15).map((image) => (
+              <ImageCard
+                key={image.id}
+                image={image.webformatURL}
+                id={image.id}
+                title={image.tags}
+              />
+            ))}
+            {/* </ul> */}
           </ReactSortable>
         </section>
       </main>
