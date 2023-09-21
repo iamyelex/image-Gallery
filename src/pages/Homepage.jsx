@@ -30,11 +30,12 @@ const Homepage = () => {
       <main className="mb-24">
         <Search />
 
-        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24 w-full">
+        <section>
           <ReactSortable
             list={loadImages}
             setList={setLoadImages}
             disabled={disable}
+            className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24"
             // draggable="item"
           >
             {/* <ul className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mt-8 px-4 lg:px-24 w-full"> */}

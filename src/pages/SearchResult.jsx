@@ -32,11 +32,12 @@ const SearchResult = () => {
         </p>
         {/* <Search /> */}
 
-        <section className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 px-4 lg:px-24">
+        <section>
           <ReactSortable
             list={loadImages}
             setList={setLoadImages}
             disabled={disable}
+            className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 px-4 lg:px-24"
           >
             {loadImages.slice(0, 15).map((image) => (
               //   <ul
