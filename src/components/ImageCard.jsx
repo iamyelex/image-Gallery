@@ -12,10 +12,10 @@ const ImageCard = ({ image, title }) => {
       />
 
       <p className=" text-center font-medium capitalize h-16">{title}</p>
-      <div>
+      {/* <div>
         <h4>Size</h4>
         <p>256mb</p>
-      </div>
+      </div> */}
     </div>
     // </GridItem>
   );
