@@ -1,11 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { login } from "../services/firebase";
 import { email, password } from "../utils/constant";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const handleLogin = function (e) {
     e.preventDefault();
 
     login();
+    navigate("/");
   };
 
   return (

@@ -4,6 +4,7 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   signOut,
+  // onAuthStateChanged,
 } from "firebase/auth";
 import { email, password } from "../utils/constant";
 
@@ -41,3 +42,8 @@ export const login = function () {
     .then((cred) => console.log("user logged in:", cred.user))
     .catch((err) => console.log(err.message));
 };
+
+// TRACK STATUS CHANGED
+// export const authChanged = onAuthStateChanged(auth, (user) => {
+//   if (user) return user;
+// });
